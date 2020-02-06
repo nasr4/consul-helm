@@ -122,11 +122,11 @@ server:
   # disruptionBudget enables the creation of a PodDisruptionBudget to
   # prevent voluntary degrading of the Consul server cluster.
   disruptionBudget:
-    enabled: true
+    enabled: false
 
     # maxUnavailable will default to (n/2)-1 where n is the number of
     # replicas. If you'd like a custom value, you can specify an override here.
-    maxUnavailable: 0
+    maxUnavailable: 1
 
   # extraConfig is a raw string of extra configuration to set with the
   # server. This should be JSON.
